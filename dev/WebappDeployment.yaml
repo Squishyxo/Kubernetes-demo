@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp-deployment
-  namespace: myapp
 spec:
   replicas: 2
   selector:
@@ -18,4 +17,4 @@ spec:
           image: mohammedxo51/webapp:webapp
           ports:
             - containerPort: 8080
-        dnsPolicy: ClusterFirst
+      dnsPolicy: ClusterFirst # Correct alignment
