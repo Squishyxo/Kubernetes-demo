@@ -17,3 +17,4 @@ spec:
           image: mohammedxo51/webapp:webapp
           ports:
             - containerPort: 8080
+        dnsPolicy: ClusterFirst
